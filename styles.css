@@ -1,0 +1,74 @@
+/* Custom styles */
+nav {
+  background-color: #40423F;
+}
+
+.btn {
+  background: linear-gradient(to right, #4b76b0 0%, #65bbb7 100%);
+  color:white;
+  border: 0;
+}
+
+#hero-img {
+  width: 100%;
+  background-image:url('https://images.unsplash.com/photo-1568056308658-aa380181da25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1637&q=80');
+  background-size: cover;
+  height: 15rem;
+  opacity: 0.6;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+@media only screen and (max-width: 600px) {
+  #about-me {
+    width: 100%;
+  }
+}
+
+
+#content {
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+#my-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+#social-icons {
+  flex-direction: row;
+  font-size: 1em;
+}
+
+#portfolio {
+  border-top: 2px solid #dfdfdf !important;
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 2rem !important;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
